@@ -1,3 +1,7 @@
+body{
+    background-color: #e24647;
+}
+
 header{
     background-color: #e24647;
 }
@@ -9,10 +13,14 @@ h1, a{
 h1{
     font-size: 40px;
     font-family: Arial;
+    float: left;
+    margin: 30px;
 }
 
 a{
     text-decoration: none;
     font-size: 21px;
     font-family: 'Segoe UI';
+    float: right;
+    margin: 30px;
 }
