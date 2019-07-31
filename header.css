@@ -14,7 +14,6 @@ h1{
     font-size: 40px;
     font-family: 'Roboto', Helvetica, sans-serif;
     float: left;
-    margin: 30px;
 }
 
 nav{
@@ -27,5 +26,5 @@ a{
     text-decoration: none;
     color: inherit;
     float: right;
-    margin: 30px;
+    padding-left: 60px;
 }
