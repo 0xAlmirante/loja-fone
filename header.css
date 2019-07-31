@@ -1,8 +1,10 @@
 body{
-    /* background-color: #e24647; */
+    height: 700px;
 }
 
 header{
+    top: 50%;
+    position: relative;
     background-color: #e24647;
     color: #ffffff;
     overflow: hidden;
@@ -26,7 +28,7 @@ a{
     text-decoration: none;
     color: inherit;
     float: right;
-    padding-left: 60px;
+    margin-left: 60px;
 }
 
 button{
@@ -35,4 +37,5 @@ button{
     color: #fff;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
+    border: solid 2px #252c41
 }
