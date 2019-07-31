@@ -1,10 +1,13 @@
 body{
-    background-color: #e24647;
+    /* background-color: #e24647; */
 }
 
 header{
     background-color: #e24647;
     color: #ffffff;
+    overflow: hidden;
+    margin: 0px 115px;
+    padding: 55px 60px 95px;
 }
 
 h1{
