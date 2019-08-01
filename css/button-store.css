@@ -1,4 +1,4 @@
-.button{
+.button-store{
     display: inline-block;
     width: 200px;
     height: 60px;
@@ -11,4 +11,5 @@
     text-decoration: none;
     background-color: #252c41;
     border: solid 2px #252c41;
+    margin-right: 38px;
 }

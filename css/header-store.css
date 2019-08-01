@@ -1,15 +1,6 @@
-body{
-    height: 700px;
-}
-
 .header-store{
-    top: 50%;
-    position: relative;
-    background-color: #e24647;
     color: #ffffff;
     overflow: hidden;
-    margin: 0px 115px;
-    padding: 55px 60px 95px;
 }
 
 .title{
