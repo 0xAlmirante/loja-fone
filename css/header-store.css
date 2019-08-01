@@ -2,7 +2,7 @@ body{
     height: 700px;
 }
 
-header{
+.header-store{
     top: 50%;
     position: relative;
     background-color: #e24647;
@@ -12,30 +12,25 @@ header{
     padding: 55px 60px 95px;
 }
 
-h1{
+.title{
     font-size: 40px;
     font-family: 'Roboto', Helvetica, sans-serif;
     float: left;
 }
 
-nav{
+.navigation{
     font-size: 21px;
     font-family: 'Segoe UI', 'Roboto', sans-serif;
     /* font-family: cursive; */
+    float: right;
 }
 
-a{
+.action{
     text-decoration: none;
     color: inherit;
-    float: right;
-    margin-left: 60px;
+    margin-right: 60px;
 }
 
-button{
-    padding: 20px 60px;
-    background-color: #252c41;
-    color: #fff;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
-    border: solid 2px #252c41
+.last{
+    margin-right: 0;
 }
