@@ -1,0 +1,46 @@
+.description-product{
+    color: #fff;
+    font-family: "Roboto", Arial, sans-serif;
+    font-size: 20px;
+    display: inline-block;
+    width: 554px;
+    vertical-align: middle;
+}
+
+
+.description-product .title{
+    margin-bottom: 100px;
+    font-size: 25px;
+}
+
+.description-product .item{
+    font-size: 20px;
+    margin-bottom: 28px;
+}
+
+.description-product .item.-info{
+    width: 200px;
+    text-align: right;
+}
+
+.description-product .item.-last{
+    margin-bottom: 72px;
+}
+
+.description-product .contrast{
+    text-transform: uppercase;
+    float: left;
+
+}
+
+.description-product .conteudo{
+    line-height: 30px;
+    margin-bottom: 30px;
+    font-size: 18px;
+}
+.description-product .more{
+    text-decoration: none;
+    margin-bottom: 80px;
+    display: block;
+    font-size: 20px;
+}
