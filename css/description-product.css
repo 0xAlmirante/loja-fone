@@ -50,6 +50,14 @@
     cursor: pointer;
 }
 
+.description-product > .heart{
+    position: absolute;
+    left: 0;
+    transform: translateX(620px);
+    padding-top: 6px;
+    cursor: pointer;
+}
+
 /* Pega o prox elemento de class item abaixo de starts. */
 /* .description-product .stars + .item{
     margin-left: 4px;
