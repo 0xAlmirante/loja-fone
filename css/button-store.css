@@ -22,3 +22,13 @@
     margin-right: 38px;
     cursor: pointer;
 }
+
+.button-store:hover{
+    background-color: #fff;
+    color: #252c41;
+}
+
+.button-store.-secondary:hover{
+    background-color: #fff;
+    color: #e24647;
+}
