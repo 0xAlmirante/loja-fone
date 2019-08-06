@@ -28,3 +28,13 @@
 .header-store .action.-last{
     margin-right: 0;
 }
+
+.header-store .search-product{
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #fff;
+    color: #fff;
+    font-size: 24px;
+    font-family: Arial, sans-serif;
+    margin-right: 65px;
+}
