@@ -46,5 +46,10 @@
 }
 
 .description-product .stars{
-    margin-bottom: 25px;
+    margin-bottom: 10px;
 }
+
+/* Pega o prox elemento de class item abaixo de starts. */
+/* .description-product .stars + .item{
+    margin-left: 4px;
+} */
