@@ -9,7 +9,7 @@
 
 
 .description-product .title{
-    margin-bottom: 100px;
+    margin-bottom: 50px;
     font-size: 25px;
 }
 
@@ -40,7 +40,11 @@
 }
 .description-product .more{
     text-decoration: none;
-    margin-bottom: 80px;
+    margin-bottom: 98px;
     display: block;
     font-size: 20px;
+}
+
+.description-product .stars{
+    margin-bottom: 25px;
 }
