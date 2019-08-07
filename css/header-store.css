@@ -26,6 +26,7 @@
 } */
 
 .header-store .action{
+    position: relative;
     text-decoration: none;
     color: inherit;
     margin-right: 60px;
@@ -35,13 +36,18 @@
     margin-right: 0;
 }
 
-.header-store .search-product{
+.header-store [type="search"]{
     background-color: transparent;
     border: none;
     border-bottom: 1px solid #fff;
-    color: #fff;
-    font-size: 24px;
     font-family: Arial, sans-serif;
+    font-size: 20px;
+    padding: 4px;
     margin-right: 65px;
     width: 358px;
+    color: inherit;
+}
+
+.header-store .search-product::placeholder{
+    color: inherit;
 }
