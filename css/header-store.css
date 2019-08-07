@@ -48,6 +48,6 @@
     color: inherit;
 }
 
-.header-store .search-product::placeholder{
-    color: inherit;
+.header-store .action:hover{
+    border-bottom: 1px solid #fff;
 }

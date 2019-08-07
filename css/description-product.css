@@ -67,6 +67,7 @@
     transition: all 100ms linear;
 }
 
+
 /* Pega o prox elemento de class item abaixo de starts. */
 /* .description-product .stars + .item{
     margin-left: 4px;
