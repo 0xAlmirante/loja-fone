@@ -26,9 +26,15 @@
 .button-store:hover{
     background-color: #fff;
     color: #252c41;
+    transition: all 300ms linear;
+}
+
+.button-store:active{
+    transform: scale(.9);
 }
 
 .button-store.-secondary:hover{
     background-color: #fff;
     color: #e24647;
 }
+
