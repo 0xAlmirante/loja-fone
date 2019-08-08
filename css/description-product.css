@@ -58,8 +58,8 @@
 }
 
 .description-product > .item.-heart:hover{
-    transform: scale(1.1) translateX(-100%);
-    transition: all 200ms linear;
+    transform: scale(1.1) translateX(-90%);
+    transition: all 100ms linear;
 }
 
 .description-product > .item.-stars > img:hover{

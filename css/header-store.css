@@ -30,6 +30,7 @@
     text-decoration: none;
     color: inherit;
     margin-right: 60px;
+    padding-bottom: 4px;
 }
 
 .header-store .action.-last{
@@ -48,6 +49,18 @@
     color: inherit;
 }
 
-.header-store .action:hover{
-    border-bottom: 1px solid #fff;
+/* After cria um elemento "depois", o display padrão do after é inline, portanto, não aceita width nem height. Para isso, setamos position: absolute; */
+.header-store .action::after{
+    content: "";
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 0px;
+    height: 1px;
+    transition: width 300ms ease-in-out;
+    background-color: #fff;
+}
+
+.header-store .action:hover::after{
+    width: 100%;
 }
