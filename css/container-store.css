@@ -1,10 +1,33 @@
 .container-store{
+    box-sizing: border-box;
     width: 90%;
+    max-width: 1330px;
     padding: 55px 60px 165px 0;
     background-color: #e24647;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
-    margin-top: 125px;
+}
+ 
+@media (max-width: 1470px), (max-height: 960px){
+    .container-store{
+        position: static;
+        transform: none;
+        max-width: 100%;
+        width: 100%;
+    }
+}
+
+@media (max-width: 1310px){
+    .container-store{
+        padding-right: 0;
+    }
+}
+
+@media (max-height: 960px){
+    .container-store{
+        max-width: 1330px;
+        margin: auto;
+    }
 }

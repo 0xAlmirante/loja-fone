@@ -72,3 +72,34 @@
 /* .description-product .stars + .item{
     margin-left: 4px;
 } */
+
+
+@media (max-width: 1310px){
+    .description-product{
+        width: 50%;
+        min-width: 655px;
+        margin: auto;
+        margin-bottom: 60px;
+    }
+
+    .description-product > .title{
+        font-size: 35px;
+        text-align: center;
+    }
+
+    .description-product > .item.-stars{
+        float: left;
+        margin-right: 15px;
+    }
+
+    .description-product > .item.-number{
+        padding-top: 4px;
+    }
+}
+
+@media (max-width: 720px){
+    .description-product{
+        width: 90%;
+        min-width: auto;
+    }
+}

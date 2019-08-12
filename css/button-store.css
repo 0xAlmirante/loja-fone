@@ -49,3 +49,21 @@
     color: inherit;
     text-decoration: inherit;
 }
+
+@media (max-width: 500px){
+    .button-store.-secondary{
+        margin: 20px;
+    }
+}
+
+@media (max-width: 470px){
+    .button-store,
+    .button-store.-secondary{
+        width: 90%;
+        display: block;
+        margin: auto;
+    }
+    .button-store.-secondary{
+        margin-bottom: 20px;
+    }
+}
