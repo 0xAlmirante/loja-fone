@@ -74,6 +74,7 @@
 @media(max-width: 1310px){
     .header-store{
         padding-right: 60px;
+        margin-bottom: 60px;
     }
 }
 
@@ -102,6 +103,12 @@
     }
 }
 
+@media (max-width: 770px){
+    .header-store{
+        margin-bottom: 60px;
+    }
+}
+
 @media (max-width: 532px){
     .header-store .action{
         margin-right: 30px;
@@ -118,6 +125,7 @@
     .header-store{
         padding-left: 16px;
         padding-right: 16px;
+        margin-bottom: 30px;
     }
 
     .header-store .action{

@@ -1,3 +1,8 @@
+html, body{
+    height: 100%;
+}
+
 body{
     background-color: #252e34;
+    background-image: linear-gradient(to top, #ff2e63, #252a34)
 }
