@@ -1,11 +1,12 @@
+let valorInicial = 10;
 
-const $adicionaCarrinho = document.querySelector(".-secondary");
 
-console.log($adicionaCarrinho)
+const $secondary = document.querySelector(".-secondary");
 
-$adicionaCarrinho.addEventListener("click", adicionarCarrinho);
+$secondary.addEventListener("click", handleClick);
 
-function adicionarCarrinho(){
-    const textoCarrinho = document.querySelector(".-last");
-    textoCarrinho.innerHTML = "Adicionado";
-}
+function handleClick(){
+    const $carrinho = document.querySelector(".-last");
+
+    $carrinho.textContent = `Carrinho (${++valorInicial})`;
+};
