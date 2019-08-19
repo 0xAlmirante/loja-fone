@@ -1,40 +1,56 @@
-
 const $heart = document.querySelector(".-heart");
+const $stars = document.querySelectorAll(".-stars .icon");
+const positionLast = $stars.length - 1;
 
 $heart.addEventListener("click", handleClick);
 
-function handleClick(){
+// Percorre cada item da node list
+$stars.forEach(($star, key) =>{
+    if(key == 0){
+        $star.addEventListener("click", firstStar);
+    }
+    
+    if( key == positionLast){
+        $star.addEventListener("click", lastStar);
+    }
+    
+    if(key > 0 && key < positionLast){
+        $star.addEventListener("click", function() {
+            middleStar(key);
+        });
+    }
+});
 
+function handleClick(){
     // if($heart.classList.contains("-active")){
     //     $heart.classList.remove("-active");
     // } else{
     //     $heart.classList.add("-active");
     // }
-
-    $heart.classList.toggle("-active");
-
+    this.classList.toggle("-active");
+    
 };
 
-const $stars = document.querySelectorAll(".-stars .icon");
-
-// Percorre cada item da node list
-$stars.forEach( (star, index) =>{
-    star.addEventListener("click", () => {
-        handleStar(index);
-    })
-})
-
-function handleStar(index){
-    const tamanho = $stars.length - 1;
-    if($stars[index].classList.contains("-active")){
-        for(let i = tamanho; i > index; i--){
-            $stars[i].classList.remove("-active");
-        }
-    } else {
-        for(let i = 0; i <= index; i++){
-            $stars[i].classList.add("-active");
-        }
-    }
+function firstStar(){
+    $stars.forEach(($star) => {
+        $star.classList.remove("-active");
+    });
     
+    this.classList.add("-active");
 }
 
+function middleStar(index){
+    $stars.forEach(($star, key) => {
+        $star.classList.remove("-active");
+
+    if(key <= index){
+        $star.classList.add("-active");
+    }
+    });
+}
+
+function lastStar(){
+    $stars.forEach(($star) => {
+        $star.classList.add("-active");
+    })
+}
