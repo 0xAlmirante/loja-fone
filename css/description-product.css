@@ -54,6 +54,8 @@
     top: 8px;
     left: -47px;
     cursor: pointer;
+    width: 33px;
+    height: 29px;
 }
 
 .description-product > .item.-active{
@@ -105,11 +107,31 @@
     .description-product > .item.-number{
         padding-top: 4px;
     }
+
+    .description-product > .item.-heart{
+        left: auto;
+        transform: none;
+        width: 33px;
+        height: 29px;
+    }
 }
 
 @media (max-width: 720px){
     .description-product{
         width: 90%;
         min-width: auto;
+    }
+}
+
+@media (max-width: 475px){
+
+    .description-product > .title{
+        margin-bottom: 30px;
+    }
+
+    .description-product > .item.-heart{
+        position: static;
+        margin: auto;
+        margin-bottom: 15px;
     }
 }
