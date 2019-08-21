@@ -111,8 +111,11 @@
     .description-product > .item.-heart{
         left: auto;
         transform: none;
-        width: 33px;
-        height: 29px;
+    }
+
+    .description-product > .item.-heart:hover{
+        transform: scale(1.1);
+        transition: all 100ms linear;
     }
 }
 
