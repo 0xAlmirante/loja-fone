@@ -21,11 +21,12 @@
 }
 
 .header-store .action{
+    display: inline-block;
     position: relative;
     text-decoration: none;
     color: inherit;
     margin-right: 60px;
-    padding-bottom: 4px;
+    padding-bottom: 8px;
 }
 
 .header-store .action.-last{
@@ -36,7 +37,7 @@
 .header-store .action::after{
     content: "";
     position: absolute;
-    bottom: -1px;
+    bottom: 2px;
     left: 0;
     width: 0px;
     height: 1px;
