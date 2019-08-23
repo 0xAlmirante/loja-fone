@@ -9,6 +9,7 @@
         <link rel="stylesheet" href="css/base.css">
         <link rel="stylesheet" href="css/container-store.css">
         <link rel="stylesheet" href="css/header-store.css">
+        <link rel="stylesheet" href="css/input-search.css">
         <link rel="stylesheet" href="css/photo-product.css">
         <link rel="stylesheet" href="css/wrap-product.css">
         <link rel="stylesheet" href="css/description-product.css">
@@ -19,12 +20,15 @@
             <header class="header-store">
                 <h1 class="title"> Logo </h1>
                 <nav class="navigation">
-                    <input type="search" name="search" placeholder="Busca">
-                    <img class="search" src="/images/search.png" alt="Busca">
-                    <img class="close" src="images/close.png" alt="close-icon">
+                    <form class="input-search">
+                        <input class="content" type="search" name="search" placeholder="Busca"><!--  
+                        --><input type="image" class="icon -open -active" src="/images/search.svg" alt="icone-busca"><!--  
+                        --><input  type="image" class="icon -close" src="images/close.svg" alt="icone-close">
+                    </form>
                     <a class="action" href="">Produtos</a> 
                     <a class="action" href="">Serviços</a>
                     <a class="action -last" href="">Carrinho (10)</a>
+                    
                 </nav>
             </header>
 
@@ -64,7 +68,7 @@
 
         </div>
 
-        <script src="js/header-store.js"></script>
+        <script src="js/input-search.js"></script>
         <script src="js/description-product.js"></script>
         <script src="js/button-store.js"></script>
     </body>    
