@@ -20,18 +20,26 @@
     float: right;
 }
 
-.header-store .action{
+.header-store .item{
     display: inline-block;
-    position: relative;
-    text-decoration: none;
-    color: inherit;
     margin-right: 60px;
     padding-bottom: 8px;
 }
 
-.header-store .action.-last{
+.header-store .item.-menu{
+    display: none;
+}
+
+.header-store .item.-last{
     margin-right: 0;
 }
+
+.header-store .action{
+    position: relative;
+    text-decoration: none;
+    color: inherit;
+}
+
 
 /* After cria um elemento "depois", o display padrão do after é inline, portanto, não aceita width nem height. Para isso, setamos position: absolute; */
 .header-store .action::after{
@@ -84,13 +92,13 @@
 }
 
 @media (max-width: 532px){
-    .header-store .action{
+    .header-store .item{
         margin-right: 30px;
     }
 }
 
 @media (max-width: 472px){
-    .header-store .action{
+    .header-store .item{
         margin-right: 15px;
     }
 }
@@ -102,13 +110,56 @@
         margin-bottom: 30px;
     }
 
-    .header-store .action{
+    .header-store .item{
         margin-right: 8px;
     }
 }
 
 @media (max-width: 340px){
-    .header-store .action{
-        display: none;
+
+    
+
+    .header-store .item.-menu{
+        display: block;
+        width: 40px;
+        height: 40px;
+        background: url(../images/menu.svg) #fff no-repeat center;
+        box-sizing: border-box;
+        text-indent: -9999px;
+        margin: 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: translateX(-100%);
+
+        transition: transform 400ms 200ms linear;
     }
+
+    .header-store .item.-menu.-active{
+        transform: translateX(0);
+        transition:  none;
+        background-size: 65%;
+        background-image: url(../images/close.svg);
+    }
+
+    .header-store .list{
+        background-color: #fff;
+        color: #000;
+        position: absolute;
+        width: 100vw;
+        padding: 40px 0 10px;
+        top: 0;
+        right: 0;
+        transform: translateX(100%);
+        transition: transform 300ms ease-in-out;
+    }
+    .header-store .list.-active{
+        transform: translateX(0);
+        transition: transform 300ms ease-in-out;
+    }
+
+    .header-store .item{
+        display: block;
+    }
+
 }

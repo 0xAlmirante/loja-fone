@@ -1,9 +1,7 @@
-const $menu = document.querySelector(".menu-store");
-const $navigation = document.querySelector(".navigation");
-const $action = $navigation.querySelectorAll(".action");
+const $menu = document.querySelector(".-menu");
+const $list = document.querySelector(".list");
 
 $menu.addEventListener("click", () => {
-    $action.forEach(($action) => {
-        $action.classList.toggle("-active");
-    })
+    $list.classList.toggle("-active");
+    $menu.classList.toggle("-active");
 })
